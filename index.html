@@ -9,7 +9,13 @@
 
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -114,14 +120,15 @@
       </nav>
 
 
-
-
-
       <!--
         - #ABOUT
       -->
-
-      <article class="about  active" data-page="about">
+      <style>
+        .about-text {
+          text-align: justify;
+        }
+      </style>
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title" id="about-title">About me</h2>
@@ -147,7 +154,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Ce que je fais</h3>
 
           <ul class="service-list">
             <li class="service-item">
@@ -155,7 +162,7 @@
                 <img src="./assets/images/icon-dev.svg" alt="Embedded icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Développement embarqué</h4>
+                <h4 class="h4 service-item-title">Développement ROS</h4>
                 <p class="service-item-text">Conception de logiciels pour microcontrôleurs et systèmes embarqués temps réel.</p>
               </div>
             </li>
@@ -165,8 +172,8 @@
                 <img src="./assets/images/icon-photo.svg" alt="Drone icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Systèmes drones</h4>
-                <p class="service-item-text">Développement et intégration de drones aériens et sous-marins.</p>
+                <h4 class="h4 service-item-title">Vision par ordinateur</h4>
+                <p class="service-item-text">Traitement d’image, détection d’objets, navigation autonome sur Raspberry Pi.</p>
               </div>
             </li>
           
@@ -175,8 +182,8 @@
                 <img src="./assets/images/icon-app.svg" alt="Vision icon" width="40">
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Vision & IA embarquée</h4>
-                <p class="service-item-text">Traitement d’image, détection d’objets, navigation autonome sur Raspberry Pi.</p>
+                <h4 class="h4 service-item-title">IA embarquée</h4>
+                <p class="service-item-text">Développement et intégration de drones aériens et sous-marins.</p>
               </div>
             </li>
           </ul>
@@ -184,16 +191,6 @@
 
         </section>
 
-
-        <!--
-          - testimonials
-        -->
-
-
-
-        <!--
-          - testimonials modal
-        -->
 
         <div class="modal-container" data-modal-container>
 
@@ -236,55 +233,6 @@
         </div>
 
 
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -324,17 +272,8 @@
             
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ingénieur alternant en développement embarqué</h4>
-              <span>2022 — Aujourd’hui</span>
-              <p class="timeline-text">
-                Développement de systèmes connectés, capteurs, réseaux XBee, intelligence artificielle embarquée et automatisation de drones.
-              </p>
-            </li>
 
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DUT GEII - IUT de Brest</h4>
+              <h4 class="h4 timeline-item-title">DUT Génie Électrique et Informatique Industrielle - IUT de Brest</h4>
 
               <span>2020 — 2022</span>
 
@@ -364,92 +303,85 @@
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Stage en développement drone – Copenhague</h4>
-              <span>Avril — Août 2023</span>
+              <span>Août — Septembre 2024</span>
               <p class="timeline-text">
-                Stage de 4 mois dans une entreprise danoise spécialisée dans les drones. Développement sur le firmware PX4, simulation avec Gazebo et 
-                configuration de missions autonomes avec MAVROS. Collaboration avec une équipe internationale et amélioration de mes compétences 
+                Stage de 4 mois dans une entreprise danoise spécialisée dans les drones. Développement sur le firmware PX4, simulation avec Gazebo et
+                configuration de missions autonomes avec MAVROS. Collaboration avec une équipe internationale et amélioration de mes compétences
                 en ROS, C++, et environnement Linux.
               </p>
             </li>
-            
 
-             
-
-             
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Ingénieur alternant en vision industrielle</h4>
+              <span>2022 — Aujourd’hui</span>
+              <p class="timeline-text">
+                Développement de systèmes connectés, capteurs, réseaux XBee, intelligence artificielle embarquée et automatisation de drones.
+              </p>
+            </li>
 
           </ol>
 
         </section>
 
         <section class="skill">
-          <h3 class="h3 skills-title" id="skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
+          <h3 class="h3 skills-title" id="skills-title">Mes compétences</h3>
+          <div class="skills-category">
+            <h4 class="h4">
+              <i class="fas fa-code"></i> Langages de programmation
+            </h4>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Python</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">C++</h5>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">C++</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">C#</h5>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">C#</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">C</h5>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">C</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </ul>
+          </div>
 
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">ROS</h5>
+          <div class="skills-category">
+            <h4 class="h4">
+              <i class="fas fa-robot"></i> Drone
+            </h4>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">ROS / ROS2</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">ROS2</h5>
+              </li>
+              <li class="skills-item">
+                <div class="skill">
+                  <div class="title-wrapper">
+                    <h5 class="h5">PX4 / ArduPilot</h5>
+                  </div>
                 </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">PX4</h5>
-                </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="skill">
-                <div class="title-wrapper">
-                  <h5 class="h5">ArduPilot</h5>
-                </div>
-              </div>
-            </li>
-
-          </ul>
+              </li>
+            </ul>
+          </div>
         </section>
 
       </article>
