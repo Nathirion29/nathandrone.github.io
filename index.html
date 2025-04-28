@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathan Robotics | Portfolio</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo-transparent-png.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link
           rel="stylesheet"
@@ -22,7 +23,6 @@
 </head>
 
 <body>
-  <button id="lang-toggle" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">🇫🇷 / 🇬🇧</button>
   <main>
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
@@ -33,7 +33,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Nathan Thirion">Nathan Thirion</h1>
-          <p class="title">Ingénieur Robotique & Drones</p>
+          <p class="title">Ingénieur développeur robotique</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -94,13 +94,12 @@
       <nav class="navbar">
 
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>À propos</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>CV</button>
           </li>
 
           <li class="navbar-item">
@@ -114,7 +113,6 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
         </ul>
 
       </nav>
@@ -128,20 +126,20 @@
           text-align: justify;
         }
       </style>
-      <article class="about active" data-page="about">
+      <article class="about active" data-page="à propos">
 
         <header>
-          <h2 class="h2 article-title" id="about-title">About me</h2>
+          <h2 class="h2 article-title" id="about-title">À propos</h2>
         </header>
 
         <section class="about-text">
           <p id="about-text-1">
           <p>
-            Je suis ingénieur en robotique et systèmes embarqués, spécialisé dans les drones, la vision par ordinateur et les capteurs connectés. 
-            Passionné de technologie, je développe des projets innovants mêlant hardware, software et IA embarquée.
+            Je suis en dernière année d'école d'ingénieur à l'ISEN de Brest. Je suis spécialisé en développement et conception robotique/drones.
+            Passionné de robotique, je souhaite développer des projets mêlant hardware et software.
           </p>
           <p id="about-text-2">
-            Mon parcours m’a permis de travailler sur des drones aériens et sous-marins, des systèmes de télécommunication (XBee, LoRa), 
+            Mon parcours m’a permis de travailler sur des drones terrestes, aériens et marins, des systèmes de télécommunication (XBee, LoRa),
             et des interfaces de commande pour la robotique mobile. J'aime apprendre, créer, et explorer les synergies entre robotique et environnement.
           </p>
         </section>
@@ -244,10 +242,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="cv">
 
         <header>
-          <h2 class="h2 article-title" id="resume-title">Resume</h2>
+          <h2 class="h2 article-title" id="resume-title">CV</h2>
         </header>
 
         <section class="timeline">
@@ -384,6 +382,8 @@
           </div>
         </section>
 
+
+
       </article>
 
 
@@ -417,7 +417,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Développement</button>
             </li>
 
           </ul>
@@ -458,21 +458,16 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="robotique">
-              <a href="https://github.com/Nathirion29" target="_blank">
-
+            <li class="project-item active" data-filter-item data-category="développement">
+              <a href="https://github.com/Nathirion29/Drone_simulateur" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/THIRION.jpg" alt="simulateur drone" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
+                <h3 class="project-title">Simulateur décollage PID en Rust</h3>
+                <p class="project-category">Développement</p>
               </a>
             </li>
 
@@ -832,13 +827,7 @@
           <h2 class="h2 article-title" id="contact-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+
 
         <section class="contact-form">
 
@@ -847,16 +836,16 @@
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Adresse e-mail" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span id="send-message">Send Message</span>
+              <span id="send-message">Envoyer le message</span>
             </button>
 
           </form>
@@ -885,44 +874,33 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("lw_saPTzpTZ6NyYrv"); // Remplacez par votre vraie clé publique
 
-<script>
-  const translations = {
-    fr: {
-      "about-text-1": "Je suis ingénieur en robotique et systèmes embarqués, spécialisé dans les drones, la vision par ordinateur et les capteurs connectés. Passionné de technologie, je développe des projets innovants mêlant hardware, software et IA embarquée.",
-      "about-text-2": "Mon parcours m’a permis de travailler sur des drones aériens et marins, des systèmes de télécommunication (XBee, TLRS), et des interfaces de commande pour la robotique mobile (middleware : ROS). J'aime apprendre, créer, et explorer les technologies liées à la robotique.",
-      "about-title": "À propos",
-      "resume-title": "CV",
-      "skills-title": "Compétences",
-      "contact-title": "Contact",
-      "contact-form-title": "Formulaire de contact",
-      "send-message": "Envoyer le message"
-    },
-    en: {
-      "about-text-1": "I am a robotics and embedded systems engineer, specialized in drones, computer vision, and connected sensors. Passionate about technology, I develop innovative projects combining hardware, software, and embedded AI.",
-      "about-text-2": "My background includes working on aerial and underwater drones, communication systems (XBee, LoRa), and mobile robotics control interfaces. I enjoy learning, creating, and exploring the synergy between robotics and the environment.",
-      "about-title": "About me",
-      "resume-title": "Resume",
-      "skills-title": "My skills",
-      "contact-title": "Contact",
-      "contact-form-title": "Contact Form",
-      "send-message": "Send Message"
-    }
-  };
+      document.querySelector('[data-form]').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-  let currentLang = 'fr';
-  const toggleBtn = document.getElementById("lang-toggle");
+        // Afficher indication de chargement
+        document.getElementById('send-message').textContent = "Envoi en cours...";
+        document.querySelector('[data-form-btn]').disabled = true;
 
-  toggleBtn.addEventListener("click", () => {
-    currentLang = currentLang === 'fr' ? 'en' : 'fr';
-    const langData = translations[currentLang];
+        emailjs.sendForm('service_uu41ghj', 'template_cicwdv9', this)
+                .then(function() {
+                  alert('Message envoyé avec succès!');
+                  document.querySelector('[data-form]').reset();
+                  document.getElementById('send-message').textContent = "Envoyer le message";
+                  document.querySelector('[data-form-btn]').disabled = true;
+                }, function(error) {
+                  alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
+                  console.log('ERREUR:', error);
+                  document.getElementById('send-message').textContent = "Envoyer le message";
+                  document.querySelector('[data-form-btn]').disabled = false;
+                });
+      });
+    })();
+  </script>
 
-    for (const id in langData) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = langData[id];
-    }
-  });
-</script>
 </body>
 
 
